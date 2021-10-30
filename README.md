@@ -18,7 +18,10 @@ npm run pack
 npm i node-app.localhost-1.0.0.tgz -g
 web-app --type=multiple --number=4 --port-begin=3000 --port-end=3003 --name="music"
 ```
+
+
 or in developpement mode:
 ```
+npm run build
 node lib/app.js --type=multiple --number=4 --port-begin=3000 --port-end=3003 --name="music"
 ```
