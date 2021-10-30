@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/app.js",
+  "bin": {
+    "web-app": "./bin/web-app"
+  },
   "scripts": {
     "build": "tsc"
   },
