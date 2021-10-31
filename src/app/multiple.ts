@@ -5,7 +5,8 @@ export function runMultipleApp(
   portBegin: number,
   portEnd: number,
   name: string,
-  health?: string
+  health?: string,
+  slow?: number,
 ): void {
   if (n != portEnd - (portBegin - 1)) {
     throw new Error("Your number flags isn't equal to port-begin and port-end");
@@ -14,7 +15,7 @@ export function runMultipleApp(
 
   for (let i = 0; i < n; i++) {
     if (port <= portEnd) {
-      runWebApp(port, name, health);
+      runWebApp(port, name, health, slow);
       port++;
     } else {
       throw new Error(
